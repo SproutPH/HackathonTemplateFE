@@ -1,10 +1,22 @@
 # Sprout Hackaton FE Template
 
-This template should help get you started developing with Vue 3 in Vite.
+This template provides a starting point for developing Sprout Hackaton FE applications with Vite, incorporating the sprout design system, best practices and modern tooling.
 
-## Recommended IDE Setup
+## Technology Stack
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+This project utilizes the following core technologies:
+
+- **Framework:** [Vue 3](https://vuejs.org/)
+- **Build Tool:** [Vite](https://vitejs.dev/)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Routing:** [Vue Router](https://router.vuejs.org/)
+- **State Management:** [Pinia](https://pinia.vuejs.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components:** [Sprout Design System](https://jolly-rock-0e7e9fa00.5.azurestaticapps.net/)
+- **Utility Functions:** [VueUse](https://vueuse.org/)
+- **HTTP Client:** [Axios](https://axios-http.com/)
+- **Authentication:** [Keycloak JS](https://www.keycloak.org/docs/latest/securing_apps/#_javascript_adapter)
+
 
 ## Customize configuration
 
