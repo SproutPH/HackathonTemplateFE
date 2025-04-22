@@ -10,13 +10,7 @@ export default defineConfig({
     port: 5173,
     proxy: {
       "/api": {
-        // target: "http://ca-ecomm-bff-api-test.blackcoast-5832bae2.southeastasia.azurecontainerapps.io",
-        target: "",
-        changeOrigin: true,
-        secure: false,
-      },
-      "/ec/api": {
-        target: "",
+        target: "http://localhost:5069/",
         changeOrigin: true,
         secure: false,
       },

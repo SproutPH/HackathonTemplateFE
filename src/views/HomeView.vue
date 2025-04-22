@@ -23,10 +23,7 @@ const displayToken = () => {
 
 const testFetch = async () => {
   try {
-    const response = await apiClient.get("/ec/api/v1/Statuses/Products");
-    alert(JSON.stringify(response.data));
-
-    const response1 = await apiClient.get("/api/v1/statuses/all");
+    const response1 = await apiClient.get("/api/notes");
     alert(JSON.stringify(response1.data));
   } catch (error) {
     console.error("Failed to fetch data", error);
