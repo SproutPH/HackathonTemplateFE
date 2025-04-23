@@ -30,6 +30,21 @@ This frontend template requires a running backend API for features involving dat
 
 ## Project Setup
 
+### Environment Variables
+
+Make sure to create and configure the `.env` file in the project root with the necessary environment variables before running the application. You can use the `.env.example` file as a template:
+
+```sh
+# Copy the example file
+cp .env.example .env
+
+# Edit the .env file with your specific values
+```
+
+All required environment variables are already defined in the `.env.example` file with appropriate descriptions. Simply update the values to match your specific configuration needs.
+
+### Installation
+
 ```sh
 npm install
 ```
