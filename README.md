@@ -24,6 +24,9 @@ Make sure you have the following installed on your system:
 - [Node.js](https://nodejs.org/) (LTS version recommended, currently v20.x)
 - [npm](https://www.npmjs.com/) (usually comes with Node.js) or [yarn](https://yarnpkg.com/) or [pnpm](https://pnpm.io/)
 
+## Backend Setup (Required for API Calls)
+
+This frontend template requires a running backend API for features involving data fetching or authentication. Please refer to the [SproutPH/HackathonTemplate repository](https://github.com/SproutPH/HackathonTemplate) for instructions on how to set up and run the backend.
 
 ## Project Setup
 
