@@ -19,6 +19,8 @@
         <spr-button tone="success" @click="displayToken"
           >Display Token</spr-button
         >
+        <spr-button tone="danger" @click="logout" v-if="keycloakStore.isAuthenticated"
+          >Logout</spr-button>
       </div>
     </div>
 
@@ -75,6 +77,10 @@ const displayToken = () => {
   console.log(keycloakStore.keycloakApp.instance.token);
 };
 
+
+const logout = () => {
+  keycloakStore.keycloakApp.instance.logout();
+};
 
 const fetchEmployeeById = async () => {
   if (!employeeId.value) {
