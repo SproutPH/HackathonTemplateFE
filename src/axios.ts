@@ -3,6 +3,7 @@ import { useKeycloakStore } from "./stores/keycloakStore";
 import { updateToken } from "./services/KeycloakService";
 
 const apiClient = axios.create({
+  baseURL: import.meta.env.VITE_API_URL || '/',
   headers: {
     "Content-Type": "application/json",
   },
