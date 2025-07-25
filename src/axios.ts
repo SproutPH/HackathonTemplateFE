@@ -2,8 +2,16 @@ import axios from "axios";
 import { useKeycloakStore } from "./stores/keycloakStore";
 import { updateToken } from "./services/KeycloakService";
 
+const getBaseURL = () => {
+  const apiUrl = import.meta.env.VITE_API_URL;
+  if (!apiUrl || apiUrl.includes('localhost')) {
+    return '/';
+  }
+  return apiUrl;
+};
+
 const apiClient = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || '/',
+  baseURL: getBaseURL(),
   headers: {
     "Content-Type": "application/json",
   },
